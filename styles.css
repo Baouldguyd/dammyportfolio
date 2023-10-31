@@ -99,6 +99,8 @@ header {
     transition-delay: 0s;
     transition-property: height;
   justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 nav ul {
@@ -320,11 +322,12 @@ nav a {
 }
 
 .project-thumbnail {
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 9rem;
   margin-bottom: 10px;
   overflow: hidden;
-  border-radius: 50%;
+  display: inline-block;
+  /* border-radius: 50%; */
 }
 
 .project-thumbnail img {
@@ -332,6 +335,12 @@ nav a {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: transform 0.3s;
+}
+
+.project-thumbnail img:hover{
+  transform: scale(0.95);
+  
 }
 
 .project-card h3 {
